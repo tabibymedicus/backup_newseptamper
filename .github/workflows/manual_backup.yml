@@ -18,4 +18,4 @@ jobs:
         export_default_credentials: true
     - run: gcloud info
     - run: gcloud config set project medicus-7944f
-    - run: gcloud firestore export $BUCKET
+    - run: gcloud firestore export $BUCKET --collection-ids=articles,doc_profile_store,post_face_db,users_log,users_sumry
